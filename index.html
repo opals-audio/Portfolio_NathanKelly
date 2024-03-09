@@ -1,0 +1,272 @@
+<!-- Many thanks to @howtobecomeadeveloper(YouTube) for the HTML template! -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan Kelly</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nathan Kelly</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nathan Kelly</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li>
+            <a href="#about" onclick="toggleMenu()">About</a>
+          </li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets\Me-and-cu-circle.png" alt="My Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi, I'm</p>
+        <h1 class="title">Nathan Kelly</h1>
+        <p class="section__text__p2">I Love All Things Audio & Code</p>
+        <div class="btn-container"></div>
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/myCV.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <h3>
+              I'm looking for a job as a junior programmer that will help me
+              continue my journey into programming and software development.
+            </h3>
+            <br />
+            <p class="about-text">
+              My long-term programming goal is to create educational audio
+              software that creates an entry point into music for everybody -
+              regardless of ability or social situation. However,
+              <i><b>
+                  I first want to receive real-world software development
+                  experience, and build my skills under the supervision of a
+                  supportive team.</b></i>
+              <br><br>
+              I am a positive, hard-working and team-orientated person. My
+              previous career has provided me experience of working in every
+              level of a team, from a trainee chef to a kitchen manager. I have
+              no problem following detailed instructions from managers, but I
+              also have the confidence to work independently, without the need
+              for too much reassurance.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <h2>Skills</h2>
+              <dl>
+                <dt>Programming Languages:</dt>
+                <dd>C++, C#, Javascript, MAX/MSP, HTML/CSS</dd>
+                <br />
+                <dt>Digital Signal Processing</dt>
+                <dd>
+                  Understanding of principles, methods and problem-solving
+                  techniques
+                </dd>
+                <br />
+                <dt>Software Development</dt>
+                <dd>
+                  Design of object-oriented systems, use of appropriate
+                  libraries, representation of systems using UML & diagrams, UI
+                  & UX design
+                </dd>
+                <br />
+                <dt>Version Control</dt>
+                <dd>
+                  Using Git to manage source code and ensure safe development
+                  within a team
+                </dd>
+              </dl>
+            </div>
+            <div class="details-container">
+              <h2>Education</h2>
+              <dt>
+                BSc <i>(Hons)</i> Creative Music Technology <i>(First Class)</i>
+              </dt>
+              <dd></dd>
+              <dd>
+                Winner of the
+                <i
+                  >JAMES Outstanding Achievement Award for Professionalism in
+                  Audio Practice</i
+                >
+              </dd>
+              <br />
+              <h2>Work Experience</h2>
+              <dt><b>June 2023 - Present</b></dt>
+              <dd>
+                <b>Freelance Sound Designer & Editor</b> <br />Liasing with
+                clients, producing high quality work to specification, working
+                to tight deadlines
+              </dd>
+              <dt>2010 - 2023</dt>
+              <dd>
+                <b>Previous career as fine-dining chef</b>
+                <br />Numerous kitchen manager and head-chef roles, managing
+                projects, producing very high-quality work under time and
+                financial constraints.
+              </dd>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/digilog_screenshot.png"
+                alt="Digi-Log Screenshot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Digi-Log</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Source Code
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/ebUyCgVmTTY'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/eggs_screenshot.png"
+                alt="Eggs! Screenshot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Eggs!</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://codesandbox.io/p/sandbox/cpc-assignment1-finished-gp3rq?file=%2Fpackage.json'"
+              >
+                Source Code
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://gp3rq.csb.app/'"
+              >
+                Play Live
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets\begin_screenshot.png"
+                alt="Begin Screenshot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Begin - A Learning Synthesiser
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/aMYh0vHNzaI'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:opals.audio@gmail.com">opals.audio@gmail.com</a></p>
+        </div>
+       
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nathan Kelly. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
