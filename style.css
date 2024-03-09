@@ -150,7 +150,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 80vh;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -197,6 +197,8 @@ text-align: center;
 .title { 
     font-size: 3rem;
     text-align: center;
+    margin-top: 2%;
+    margin-bottom:2%;
 }
 
 #socials-container {
@@ -286,7 +288,7 @@ color:white;
     margin:auto;
     margin-bottom: 2%;
     max-width: 60%;
-    text-align: center;
+    text-align: left;
 }
 
 .about-pic {
