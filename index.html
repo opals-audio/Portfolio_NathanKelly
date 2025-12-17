@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nathan Kelly</title>
+    <meta name="description" content="Nathan Kelly - Junior Programmer specializing in audio software development, C++, and creative music technology. View my portfolio of audio and coding projects." />
+    <title>Nathan Kelly - Audio Software Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -38,22 +39,28 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="assets\Me-and-cu-circle.png" alt="My Profile Picture" />
+        <img src="assets/Me-and-cu-circle.png" alt="Nathan Kelly profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hi, I'm</p>
         <h1 class="title">Nathan Kelly</h1>
         <p class="section__text__p2">I Love All Things Audio & Code</p>
-        <div class="btn-container"></div>
-        <button
-          class="btn btn-color-2"
-          onclick="window.open('./assets/NathanKelly_CV_2512.pdf')"
-        >
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/NathanKelly_CV_2512.pdf')"
+            aria-label="Download Nathan Kelly's CV as PDF"
+          >
+            Download CV
+          </button>
+          <button 
+            class="btn btn-color-1" 
+            onclick="location.href='./#contact'"
+            aria-label="Jump to contact information section"
+          >
+            Contact Info
+          </button>
+        </div>
       </div>
     </section>
     <section id="about">
@@ -89,20 +96,20 @@
               <dl>
                 <dt>Programming Languages:</dt>
                 <dd>C++, C#, Python, Javascript, MAX/MSP, HTML/CSS</dd>
-                <br />
+                
                 <dt>Digital Signal Processing</dt>
                 <dd>
                   Understanding of principles, methods and problem-solving
                   techniques
                 </dd>
-                <br />
+                
                 <dt>Software Development</dt>
                 <dd>
                   Design of object-oriented systems, use of appropriate
                   libraries, representation of systems using UML & diagrams, UI
                   & UX design
                 </dd>
-                <br />
+                
                 <dt>Version Control</dt>
                 <dd>
                   Using Git to manage source code and ensure safe development
@@ -112,43 +119,44 @@
             </div>
             <div class="details-container">
               <h2>Education</h2>
-              <dt>
-                BSc <i>(Hons)</i> Creative Music Technology <i>(First Class)</i>
-              </dt>
-              <dd></dd>
-              <dd>
-                Winner of the
-                <i
-                  >JAMES Outstanding Achievement Award for Professionalism in
-                  Audio Practice</i
-                >
-              </dd>
-              <br />
+              <dl>
+                <dt>
+                  BSc <i>(Hons)</i> Creative Music Technology <i>(First Class)</i>
+                </dt>
+                <dd>
+                  Winner of the
+                  <i>JAMES Outstanding Achievement Award for Professionalism in
+                  Audio Practice</i>
+                </dd>
+              </dl>
+              
               <h2>Work Experience</h2>
-              <dt><b>June 2023 - Present</b></dt>
-              <dd>
-                <b>Freelance Sound Designer & Editor</b> <br />Liasing with
-                clients, producing high quality work to specification, working
-                to tight deadlines
-              </dd>
-              <dt>2010 - 2023</dt>
-              <dd>
-                <b>Previous career as fine-dining chef</b>
-                <br />Numerous kitchen manager and head-chef roles, managing
-                projects, producing very high-quality work under time and
-                financial constraints.
-              </dd>
+              <dl>
+                <dt><b>June 2023 - Present</b></dt>
+                <dd>
+                  <b>Freelance Sound Designer & Editor</b><br />
+                  Liaising with clients, producing high quality work to specification, working
+                  to tight deadlines
+                </dd>
+                
+                <dt><b>2010 - 2023</b></dt>
+                <dd>
+                  <b>Previous career as fine-dining chef</b><br />
+                  Numerous kitchen manager and head-chef roles, managing
+                  projects, producing very high-quality work under time and
+                  financial constraints.
+                </dd>
+              </dl>
             </div>
           </div>
         </div>
       </div>
-      <!-- </div> -->
 
       <img
         src="./assets/arrow.png"
-        alt="arrow icon"
+        alt="Scroll down to projects section"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#projects'"
       />
     </section>
     <section id="projects">
@@ -160,35 +168,38 @@
             <div class="article-container">
               <img
                 src="assets/digilog_screenshot.png"
-                alt="Digi-Log Screenshot"
+                alt="Digi-Log FM synthesiser interface screenshot"
                 class="project-img"
+                loading="lazy"
               />
             </div>
-<!--Digi-Log  -->
             <h2 class="experience-sub-title project-title">Digi-Log</h2>
-            <p>6-operator FM synthesiser built in C++, using the Synthesis Tool Kit (Perry Cook). <br>The synthesiser is controlled with macros - allowing the user to focus more on playing music and exploring timbres than programming an FM synthesiser.</p>
+            <p>6-operator FM synthesiser built in C++, using the Synthesis Tool Kit (Perry Cook).<br>The synthesiser is controlled with macros - allowing the user to focus more on playing music and exploring timbres than programming an FM synthesiser.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/opals-audio/Digilog'"
+                aria-label="View Digi-Log source code on GitHub"
               >
                 Source
               </button>
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://youtu.be/ebUyCgVmTTY'"
+                aria-label="Watch Digi-Log live demo on YouTube"
               >
                 Live Demo
               </button>
             </div>
           </div>
-<!-- Eggs! -->
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="assets/eggs_screenshot.png"
-                alt="Eggs! Screenshot"
+                alt="Eggs! game interface screenshot"
                 class="project-img"
+                loading="lazy"
               />
             </div>
             <h2 class="experience-sub-title project-title">Eggs!</h2>
@@ -197,26 +208,29 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://codesandbox.io/p/sandbox/cpc-assignment1-finished-gp3rq?file=%2Fpackage.json'"
+                aria-label="View Eggs! source code on CodeSandbox"
               >
                 Source
               </button>
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://gp3rq.csb.app/'"
+                aria-label="Play Eggs! game live"
               >
                 Play Live
               </button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="assets\begin_screenshot.png"
-                alt="Begin Screenshot"
+                src="assets/begin_screenshot.png"
+                alt="Begin learning synthesiser interface screenshot"
                 class="project-img"
+                loading="lazy"
               />
             </div>
-<!-- Begin -->
             <h2 class="experience-sub-title project-title">
               Begin - A Learning Synthesiser
             </h2>
@@ -225,12 +239,14 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/marvin-int/Begin.git'"
+                aria-label="View Begin source code on GitHub"
               >
                 Source
               </button>
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://youtu.be/aMYh0vHNzaI'"
+                aria-label="Watch Begin live demo on YouTube"
               >
                 Live Demo
               </button>
@@ -240,7 +256,7 @@
       </div>
       <img
         src="./assets/arrow.png"
-        alt="arrow icon"
+        alt="Scroll down to contact section"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
@@ -252,12 +268,11 @@
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
-            alt="Email Icon"
+            alt="Email icon"
             class="icon contact-icon email-icon"
           />
           <p><a href="mailto:njkelly11@gmail.com">njkelly11@gmail.com</a></p>
         </div>
-
       </div>
     </section>
     <footer>

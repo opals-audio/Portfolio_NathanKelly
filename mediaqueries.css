@@ -1,94 +1,242 @@
+/* LARGE SCREENS - Minor adjustments for very wide displays */
+@media screen and (min-width: 1600px) {
+    section {
+        margin: 0 15rem;
+    }
+    
+    .text-container {
+        max-width: 50%;
+    }
+}
+
+/* DESKTOP - Tablets in landscape and smaller laptops */
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
-        margin-bottom:6rem;
+        margin-bottom: 6rem;
     }
-    .about-containers{
+    
+    .about-containers {
         flex-wrap: wrap;
     }
+    
+    section {
+        margin: 0 8rem;
+    }
 }
+
+/* TABLET - iPad and similar devices */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
+    
     #hamburger-nav {
         display: flex;
     }
-    #experience, .experience-details-container{
+    
+    #experience, 
+    .experience-details-container {
         margin-top: 2rem;
     }
-    #profile, .section-container {
-        display:block;
+    
+    #profile, 
+    .section-container {
+        display: block;
     }
+    
     .arrow {
-        display:none;
+        display: none;
     }
-    section, .section-container {
+    
+    section, 
+    .section-container {
         height: fit-content;
     }
-    section{
-        margin:0 5%;
+    
+    section {
+        margin: 0 5%;
     }
+    
     .section__pic-container {
         width: 275px;
-        height:275px;
+        height: 275px;
         margin: 0 auto 2rem;
     }
+    
     .about-containers {
         margin-top: 0;
     }
+    
+    .text-container {
+        max-width: 85%;
+    }
 }
 
+/* SMALL TABLET - Smaller tablets and large phones in landscape */
+@media screen and (max-width: 900px) {
+    section {
+        margin: 0 3rem;
+    }
+    
+    .text-container {
+        max-width: 90%;
+    }
+    
+    .about-containers {
+        gap: 2rem;
+    }
+    
+    .details-container {
+        padding: 1.25rem;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .section__text__p2 {
+        font-size: 1.5rem;
+    }
+    
+    .project-img {
+        width: 85%;
+        height: 85%;
+    }
+}
+
+/* MOBILE - Phones in landscape and portrait */
 @media screen and (max-width: 600px) {
-    #contact, footer{
+    #contact, 
+    footer {
         height: 40vh;
     }
+    
     #profile {
         height: 83vh;
         margin-bottom: 0;
     }
+    
     article {
         font-size: 1rem;
     }
+    
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
     }
 
-    .about-containers,.contact-info-upper-container,.btn-container {
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
         flex-wrap: wrap;
     }
 
     .contact-info-container {
         margin: 0;
-
     }
-    .contact-info-container p,.nav-links li a{
+    
+    .contact-info-container p,
+    .nav-links li a {
         font-size: 1rem;
-    }   
-    .experience-sub-title{
-        font-size:1.25rem;
     }
+    
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    
     .logo {
         font-size: 1.5rem;
     }
-    .nav-links{
+    
+    .nav-links {
         flex-direction: column;
         gap: 0.5rem;
-        text-align:center;
+        text-align: center;
     }
-    .section__pic-container{
+    
+    .section__pic-container {
         width: auto;
         height: 46vw;
         justify-content: center;
     }
+    
     .section__text__p2 {
         font-size: 1.25rem;
     }
+    
     .title {
         font-size: 2rem;
     }
+    
     .text-container {
         text-align: justify;
+        max-width: 95%;
+    }
+    
+    section {
+        margin: 0 1.5rem;
+    }
+    
+    .details-container {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.75rem;
+        width: 7rem;
+        font-size: 0.9rem;
+    }
+    
+    .project-img {
+        width: 95%;
+        height: 95%;
+    }
+    
+    /* Better spacing for definition lists on mobile */
+    #about dd {
+        padding-left: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    #about dt {
+        font-size: 1rem;
+    }
+}
+
+/* SMALL MOBILE - Very small phones */
+@media screen and (max-width: 400px) {
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .title {
+        font-size: 1.75rem;
+    }
+    
+    .section__text__p2 {
+        font-size: 1.1rem;
+    }
+    
+    section {
+        margin: 0 1rem;
+    }
+    
+    .btn {
+        padding: 0.6rem;
+        width: 6.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .details-container {
+        padding: 0.75rem;
+    }
+    
+    .about-containers {
+        gap: 1.5rem;
+    }
+    
+    .contact-info-container p {
+        font-size: 0.9rem;
     }
 }
