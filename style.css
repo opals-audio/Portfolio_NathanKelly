@@ -269,7 +269,7 @@ color:white;
 }
 
 .about-containers{
-    gap: 4rem;
+    gap: 6rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
     padding: 0 1rem;
@@ -330,7 +330,7 @@ color:white;
     flex: 1;
     background: white;
     border-radius:2rem;
-    border: rgb(53,53,53) 0.1rem solid;
+    border: rgb(132, 132, 132) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
 }
@@ -378,7 +378,7 @@ color:white;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1.5rem;
     justify-content: space-around;
 }
 
